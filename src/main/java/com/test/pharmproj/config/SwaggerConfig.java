@@ -11,7 +11,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-//@ComponentScan(basePackages = {"com.test.farmproj"})
 public class SwaggerConfig {
 
    @Bean
@@ -22,30 +21,5 @@ public class SwaggerConfig {
             .paths(PathSelectors.any())
             .build();
    }
-
-//   private SpringSwaggerConfig springSwaggerConfig;
-
-//   @Autowired/
-//   public void setSpringSwaggerConfig(SpringSwaggerConfig springSwaggerConfig) {
-//      this.springSwaggerConfig = springSwaggerConfig;
-//   }
-//
-//   @Bean
-//   public SwaggerSpringMvcPlugin customImplementation() {
-//      return new SwaggerSpringMvcPlugin(this.springSwaggerConfig)
-//         .apiInfo(apiInfo())
-//         .includePatterns("/api/.*");
-//   }
-//
-//   private ApiInfo apiInfo() {
-//      return new ApiInfo(
-//         "TrainingPlanning API",
-//         "TrainingPlanning API Description",
-//         "TrainingPlanning API terms of service",
-//         "piotr.konczak@cybercom.com",
-//         "TrainingPlanning API Licence Type",
-//         "TrainingPlanning API License URL"
-//      );
-//   }
 
 }
